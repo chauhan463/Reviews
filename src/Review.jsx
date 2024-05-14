@@ -24,7 +24,7 @@ const handleRight=(index)=>{
 const handleSurprise=(index)=>{
  let new_index=(Math.floor(Math.random() * 4) + 1)
 
-console.log(new_index)
+
  if (index===new_index){
   if (index!==4){
     setIndex(index+1)
@@ -59,7 +59,7 @@ console.log(new_index)
     <p className='text'>{text}</p>
 
 
-    <div>
+    <div className='button-container'>
       
       <button className="prev-btn" onClick={()=>handleLeft(index)}><FaChevronLeft /></button>
       <button className="next-btn" onClick={()=>handleRight(index)}><FaChevronRight /></button>
